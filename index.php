@@ -6,5 +6,5 @@ require_once './vendor/autoload.php';
 
     $example = new Example();
 
-    echo $example -> hellow();
+    echo $example->hello();
 

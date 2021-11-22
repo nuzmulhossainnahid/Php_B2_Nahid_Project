@@ -7,6 +7,6 @@ class Example{
 
     public function hello()
     {
-        return"Hellow World";
+        return 'Hellow World';
     }
 }
