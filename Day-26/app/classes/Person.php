@@ -38,15 +38,11 @@ class Person
     echo'<br>';
     echo'<br>';
     echo'<br>';
-    echo $this->x && $this->y;
+    echo $this->x++;
     echo'<br>';
-    echo $this->x || $this->y;
+    echo $this->x;
     echo'<br>';
-    echo $this->x < $this->y;
-    echo'<br>';
-    echo $this->x > $this->y;
-    echo'<br>';
-    echo $this->x == $this->y;
+    echo ++$this->y;
     echo'<br>';
     }
 
