@@ -51,14 +51,13 @@ class Person
     }
     */
     switch($this->z){
-        
         case 5: echo "Hello World";
         break;
         case 6: echo "Hello BITM";
         break;
         case 7: echo "Hello BASIS";
         break;
-        case 7: echo "Hello BA";
+        case 8: echo "Hello BA";
         break;
         default:echo "This is defult";
     }
