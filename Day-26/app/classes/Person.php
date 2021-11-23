@@ -22,7 +22,7 @@ class Person
     */
     $this->x=10;
     $this->y=10;
-    $this->z=30;
+    $this->z=100;
 
     // echo $this->x += $this->y;
     // echo'<br>';
@@ -39,6 +39,7 @@ class Person
     // echo $this->x < $this->y;
     // echo $this->x === $this->y; 
 
+    /*
     if($this->x > $this->y){
         echo "Hellow world";
     }
@@ -48,6 +49,20 @@ class Person
     else{
         echo "Hello BASIS";
     }
+    */
+    switch($this->z){
+        
+        case 5: echo "Hello World";
+        break;
+        case 6: echo "Hello BITM";
+        break;
+        case 7: echo "Hello BASIS";
+        break;
+        case 7: echo "Hello BA";
+        break;
+        default:echo "This is defult";
+    }
+
     }
 
     public function test()
