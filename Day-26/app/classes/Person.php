@@ -33,9 +33,20 @@ class Person
     echo'<br>';
     echo $this->x % $this->y;
     echo'<br>';
-    echo $this->x + $this->y;
     echo'<br>';
-    echo $this->x + $this->y;
+    echo'<br>';
+    echo'<br>';
+    echo'<br>';
+    echo'<br>';
+    echo $this->x && $this->y;
+    echo'<br>';
+    echo $this->x || $this->y;
+    echo'<br>';
+    echo $this->x < $this->y;
+    echo'<br>';
+    echo $this->x > $this->y;
+    echo'<br>';
+    echo $this->x == $this->y;
     echo'<br>';
     }
 
