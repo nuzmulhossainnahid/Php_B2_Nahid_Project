@@ -21,31 +21,34 @@ class Person
         Arithemitc Operator
     */
     $this->x=10;
-    $this->y=20;
+    $this->y=10;
+    $this->z=30;
 
-    echo $this->x + $this->y;
-    echo'<br>';
-    echo $this->x - $this->y;
-    echo'<br>';
-    echo $this->x * $this->y;
-    echo'<br>';
-    echo $this->x / $this->y;
-    echo'<br>';
-    echo $this->x % $this->y;
-    echo'<br>';
-    echo'<br>';
-    echo'<br>';
-    echo'<br>';
-    echo'<br>';
-    echo'<br>';
-    echo $this->x++;
-    echo'<br>';
-    echo $this->x;
-    echo'<br>';
-    echo ++$this->y;
-    echo'<br>';
+    // echo $this->x += $this->y;
+    // echo'<br>';
+    // echo $this->x -= $this->y;
+    // echo'<br>';
+    // echo $this->x /= $this->y;
+    // echo'<br>';
+    // echo $this->x %= $this->y;
+    // echo'<br>';
+    // echo $this->x .= $this->y;
+    // echo'<br>';
+
+    // echo $this->x < $this->y;
+    // echo $this->x < $this->y;
+    // echo $this->x === $this->y; 
+
+    if($this->x > $this->y){
+        echo "Hellow world";
     }
-
+    else if($this->z < $this->y){
+        echo "Hello BITM";
+    }
+    else{
+        echo "Hello BASIS";
+    }
+    }
 
     public function test()
     {
