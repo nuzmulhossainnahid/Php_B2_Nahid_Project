@@ -1,27 +1,12 @@
 <?php
 
 require_once './vendor/autoload.php';
-
-/*
-    use App\classes\Example;
-    use App\classes\User;
-*/
-    use App\classes\Person;
+    use App\classes\Statement;
     
 
-    /*
-    $example = new Example();
-     $example->index();
 
-    echo'<br>';
-    $user = new User();
-    $user->login();
-    echo'<br>';    
-    */
-
-
-    $person = new Person(); 
-    $person->index();
+    $loop = new Statement(); 
+    $loop->forloop();
 
 
 
