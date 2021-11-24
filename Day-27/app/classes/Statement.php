@@ -12,26 +12,57 @@ class Statement{
             
             0=>[
             'name'  =>'Nahid',
-            'mobile'=>'01212',
+            'mobile'=>[
+                'mobile_one'=>'012121',
+                'mobile_two'=>'12367'
+            ],
             'email' =>'fghhgfjhg@gmail.com'
             ],
             1=>[
             'name'  =>'Hasan',
-            'mobile'=>'01212',
+            'mobile'=>[
+                'mobile_one'=>'012121',
+                'mobile_two'=>'12367'
+            ],
             'email' =>'dffdf@gmail.com'
             ]
         ];
         
+        echo'<pre>';
+        var_dump($this->data);
 
-        foreach($this->data as $key=> $item)
-        {
-            foreach($item as $value)
-            {
-                echo $value." ";
-            }
-            echo'<br/>';
+
+        // echo'<pre>';
+        // print_r($this->data);
+
+
+        // foreach($this->data as $item)
+        // {
+        //     foreach($item as $key=> $value){
+        //         // if($key=='mobile')
+        //         if(is_array($value))
+        //         {
+        //             foreach($value as $newValue)
+        //             {
+        //                 echo $newValue;
+        //             }
+        //         }
+        //         else{
+        //             echo $value;
+        //         }
+        //     }
+        // }
+        
+
+        // foreach($this->data as $key=> $item)
+        // {
+        //     foreach($item as $value)
+        //     {
+        //         echo $value." ";
+        //     }
+        //     echo'<br/>';
             
-        }
+        // }
         // foreach($this->data[1] as $key=> $item)
         // {
         //     echo $key.":".$item."</br>";
