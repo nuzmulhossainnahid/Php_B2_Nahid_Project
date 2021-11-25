@@ -2,9 +2,14 @@
 
 require_once './vendor/autoload.php';
 
-    use App\classes\Example;
+    use App\classes\Student;
 
 
-    $example = new Example();
-     $example->index();
+    $student = new Student();
+    $student->index();
+
+    echo $student->name."<br/>";
+    echo Student::$location;
+    echo Student::test();//Scop resolation proprity
+    // echo $student->test();
 
