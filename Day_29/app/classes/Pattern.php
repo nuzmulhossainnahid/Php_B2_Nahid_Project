@@ -17,6 +17,24 @@ class Pattern
             {
                 if(($this->j>= $this->n - ($this->i -1)) && ($this->j<=$this->n + ($this->i-1)))
                 {
+                    echo $this->i;
+                }
+                else{
+                    echo '&nbsp;&nbsp;';
+                }
+            }
+            
+            echo'</br>';
+        }
+
+    }
+    public function patternTwo(){
+        for ($this->i = 1; $this->i <=$this->n;  $this->i++)
+        {
+            for ($this->j = 1; $this->j <=($this->n*2)-1;  $this->j++)
+            {
+                if(($this->j>= $this->n - ($this->i -1)) && ($this->j<=$this->n + ($this->i-1)))
+                {
                     echo '*';
                 }
                 else{
@@ -41,9 +59,47 @@ class Pattern
             }
             
             echo'</br>';
+    }
+}
+    public function patternThree()
+    {
+        for ($this->i = 1; $this->i <= $this->n;$this->i++)
+        {
+            for($this->j=1; $this->j <= $this->n;$this->j++)
+                {
+                    if($this->i==1 || $this->i == $this->n)
+                    {
+                    echo'*';
+                    }
+                    else{
+                        if($this->j==1 || $this->j==$this->n)
+                        {
+                            echo '*';
+                        }
+                        else {
+                            echo'&nbsp;&nbsp;';
+                        }
+                        
+                    }
+                }
+                echo'</br>';
         }
-        
-
-
+    }
+    public function patternFour()
+    {
+        echo'</br>';
+        for ($this->i = 1; $this->i <= $this->n;$this->i++)
+        {
+            for ($this->j = 1; $this->j <= $this->n;$this->j++)
+            {
+               if($this->j== $this->i)
+               {
+                   echo'*';
+               }
+               else{
+                   echo'&nbsp;&nbsp;';
+               }
+            }echo'</br>';
+        }
     }
 }
