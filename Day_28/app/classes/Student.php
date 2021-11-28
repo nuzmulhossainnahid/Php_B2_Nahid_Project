@@ -11,6 +11,7 @@ class Student
     public $firstName;
     public $lastName;
     public $fullName;
+    public $wordCount;
 
 
     public function __construct($data){
@@ -21,8 +22,9 @@ class Student
 
     public function index()
     {
-        $this->fullName = $this->firstName." ".$this->lastName;
-        return $this->fullName; 
+        // $this->fullName = $this->firstName." ".$this->lastName;
+        $this->wordCount = str_word_count($this->firstName);
+        return $this->wordCount; 
     }
 
     public static function test()

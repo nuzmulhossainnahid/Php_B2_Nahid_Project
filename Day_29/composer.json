@@ -1,0 +1,13 @@
+{
+    "name": "phpday29/phpday29",
+    "time": "project",
+    "description": "A new project",
+    "keywords": [],
+    "license": "",
+    "require": {},
+    "require-dev": {},
+    "autoload": 
+    {
+    "psr-4": {"App\\": "app/"}
+    }
+}
