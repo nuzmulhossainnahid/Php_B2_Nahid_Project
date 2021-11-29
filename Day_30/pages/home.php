@@ -43,7 +43,8 @@
                                 <div class="form-group row">
                                     <label for="" class="col-form-label col-md-3">Result</label>
                                     <div class="col-md-9">
-                                        <textarea name="" class="form-control" id="" ><?php echo $result; ?></textarea>
+                                        <textarea name="" class="form-control" id="" ><?php if(isset($result)) 
+                                            {echo $result['total_word']."\n".$result['total_char'];} ?></textarea>
                                     </div>
                                 </div>
 

@@ -5,6 +5,9 @@ namespace App\classes;
 class ExampleOne
 {
     public $givenString;
+    public $totalWord;
+    public $totalChar;
+    public $result = [];
 
     public function __construct($data)
     {
@@ -14,6 +17,14 @@ class ExampleOne
     
     public function index()
     {
-        return $this->givenString;
+        $this->totalWord =  str_word_count($this->givenString);
+        $this->totalChar =  strlen($this->givenString);
+        $this->result = [
+            'total_word'=> 'Total Word: '.$this->totalWord,
+            'total_char'=> 'Total Char: '.$this->totalChar,
+        ];
+        
+        return $this->result;
+        
     }
 }
