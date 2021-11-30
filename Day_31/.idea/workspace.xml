@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3e0a18b-34b2-4018-aed3-43e38fbc14e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/classes/PasswordGenarot.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/PasswordGenarot.php" afterDir="false" />
-    </list>
+    <list default="true" id="b3e0a18b-34b2-4018-aed3-43e38fbc14e7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638260581009</updated>
-      <workItem from="1638260582414" duration="3827000" />
+      <workItem from="1638260582414" duration="3867000" />
     </task>
     <task id="LOCAL-00001" summary="st">
       <created>1638262080278</created>
@@ -183,11 +180,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3827000" />
+    <option name="totallyTimeSpent" value="3867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18091603" />
