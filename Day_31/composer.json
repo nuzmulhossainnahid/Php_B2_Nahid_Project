@@ -1,13 +1,12 @@
 {
-    "name": "php/php",
-    "time": "project",
-    "description": "A new project",
-    "keywords": [],
-    "license": "",
-    "require": {},
-    "require-dev": {},
-    "autoload": {
-        "psr-4": {"App\\": "app/"}
-
-    }
+  "name": "phpday30/phpday30",
+  "type": "project",
+  "description": "A new project",
+  "keywords": [],
+  "license": "",
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {"App\\": "app/"}
+  }
 }
