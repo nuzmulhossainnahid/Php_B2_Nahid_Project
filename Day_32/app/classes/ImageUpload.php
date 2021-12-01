@@ -6,29 +6,55 @@ namespace App\classes;
 
 class ImageUpload
 {
-    public $value;
-    public $directory;
-    public $result = [];
+    protected $post;
+    protected $file;
+    protected $imageName;
+    protected $filetype;
+    protected $check;
+    
+    protected $directory;
+//    public $result = [];
 
 
-    public function __construct($data)
+    public function __construct($data, $file)
     {
-        $this->value = $data;
+        $this->post = $data;
+        $this->file = $file;
     }
 
     public function index(){
 //        echo '<pre>';
-//        print_r($this->value);
-//        print_r($_FILES);
+//        print_r($this->file);
+////        print_r($_FILES);
 //        echo '</pre>';
-
-    $this->directory = '../assets/img/upload/'.$_FILES['image']['name'];
-      move_uploaded_file($_FILES['image']['tmp_name'],$this->directory);
-
-      $this->result = [
-          'name' => $this->value['name'],
-            'image' => $this->directory,
-        ];
-      return $this->result;
+        
+        $this->imageName= $this->file['image']['name'];
+        $this->directory = '../assets/img/upload/'.$this->imageName;
+        
+        $this->filetype= pathinfo($this->imageName, PATHINFO_EXTENSION);
+        
+        $this->check = getimagesize($this->file['image']['tmp_name']);
+        
+        if ($this->check)
+        {
+            if(!file_exists($this->directory))
+            {
+                if($this->filetype=='jpg' || $this->filetype=='png')
+                {
+                    move_uploaded_file($this->file['image']['tmp_name'],$this->directory);
+                }
+                else{
+                    echo 'Your file type is wrong:: Please try again';
+                }
+            }
+            else {
+                die ('File is exists');
+            }
+            
+        }
+        else{
+            echo 'insert image';
+        }
+        
     }
 }
