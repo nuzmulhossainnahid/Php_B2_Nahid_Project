@@ -3,22 +3,25 @@
 
 require_once '../vendor/autoload.php';
 
-
-use App\classes\PasswordGenerate;
-use App\classes\ImageUpload;
-
+use App\classes\Student;
 
 if(isset($_POST['btn']))
 {
-    $passwordGenerate = new passwordGenerate($_POST);
-    $result = $passwordGenerate->index();
-    include ('home.php');
+    $student = new Student($_POST);
+    $message= $student->index();
+    include 'home.php';
 }
 
-elseif (isset($_POST['btn1']))
+else if(isset($_GET['status']))
 {
-    $imageUpload = new ImageUpload($_POST, $_FILES);
-    $result = $imageUpload->index();
-    extract($result);
-    include 'example-two.php';
+    if ($_GET['status']=='manage')
+    {
+       $student= new Student();
+       $student->getAllStudentInfo();
+    }
 }
+else{
+    header('Location: home.php');
+}
+
+
