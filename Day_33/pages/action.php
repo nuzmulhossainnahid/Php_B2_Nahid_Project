@@ -7,7 +7,7 @@ use App\classes\Student;
 
 if(isset($_POST['btn']))
 {
-    $student = new Student($_POST);
+    $student = new Student($_POST, $_FILES);
     $message= $student->index();
     include 'home.php';
 }
@@ -17,7 +17,8 @@ else if(isset($_GET['status']))
     if ($_GET['status']=='manage')
     {
        $student= new Student();
-       $student->getAllStudentInfo();
+       $students = $student->getAllStudentInfo();
+        include "manage.php";
     }
 }
 else{

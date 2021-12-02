@@ -14,14 +14,19 @@
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Mobile</th>
+                                <th>Image</th>
                             </tr>
                             </thead>
                             <tbody>
+                            <?php foreach ($students as $student) { ?>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?php echo $student['name'];?></td>
+                                <td><?php echo $student['email'];?></td>
+                                <td><?php echo $student['mobile'];?></td>
+                                <td align="center"><img src="<?php echo $student['image'];?>" height="150" width="150" alt=""></td>
                             </tr>
+                            
+                            <?php } ?>
                             </tbody>
                         </table>
                        

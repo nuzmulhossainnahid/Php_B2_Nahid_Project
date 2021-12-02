@@ -17,7 +17,7 @@
                             </div>
                         
                         <?php }?>
-                        <form action="action.php" method="post">
+                        <form action="action.php" method="post" enctype="multipart/form-data">
                             <div class="form-group row">
                                 <div class="col-form-label col-md-3">Name</div>
                                 <div class="col-md-9">
@@ -38,6 +38,13 @@
                                 <div class="col-form-label col-md-3">Mobile</div>
                                 <div class="col-md-9">
                                     <input type="number" name="mobile" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-form-label col-md-3">Image</div>
+                                <div class="col-md-9">
+                                    <input type="file" name="image" class="form-control">
                                 </div>
                             </div>
                             
