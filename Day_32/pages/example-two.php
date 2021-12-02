@@ -12,8 +12,8 @@
                             <th>Image</th>
                         </tr>
                         <tr>
-                            <td><?php echo $result['name']; ?></td>
-                            <td><img src="<?php echo $result['image']?>"/></td>
+                            <td><?php echo $name; ?></td>
+                            <td><img src="<?php echo $image; ?>"/></td>
                         </tr>
                     </table>
                 </div>

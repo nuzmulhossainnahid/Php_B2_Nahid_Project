@@ -47,6 +47,10 @@ class ImageUpload
                 if($this->filetype=='jpg' || $this->filetype=='png')
                 {
                     move_uploaded_file($this->file['image']['tmp_name'],$this->directory);
+                    return [
+                        'name' => $this->post['name'],
+                        'image' =>$this->directory,
+                    ];
                 }
                 else{
                     echo 'Your file type is wrong:: Please try again';
