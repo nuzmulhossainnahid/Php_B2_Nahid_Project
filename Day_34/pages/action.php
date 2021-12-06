@@ -1,28 +1,40 @@
 <?php
-
-
 require_once '../vendor/autoload.php';
 
-use App\classes\Student;
 
-if(isset($_POST['btn']))
+
+use App\classes\primeNumber;
+use App\classes\Auth;
+
+
+
+
+
+
+if(isset($_POST['primeBtn']))
 {
-    $student = new Student($_POST, $_FILES);
-    $message= $student->index();
-    include 'home.php';
+
+    $primeNumber = new primeNumber($_POST);
+    $result =  $primeNumber->index();
+    include 'prime.php';
+}
+
+else if(isset($_POST['loginBtn']))
+{
+    $auth = new Auth($_POST);
+   $message = $auth->login();
+   include 'login.php';
 }
 
 else if(isset($_GET['status']))
 {
-    if ($_GET['status']=='manage')
+    if($_GET['status'] == 'logout')
     {
-       $student= new Student();
-       $students = $student->getAllStudentInfo();
-        include "manage.php";
+        $auth = new Auth();
+        $auth->logout();
     }
 }
+
 else{
-    header('Location: home.php');
+    header('Location: prime.php');
 }
-
-
