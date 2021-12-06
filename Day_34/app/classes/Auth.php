@@ -30,18 +30,13 @@ class Auth
     {
         $this->userEmail = 'admin@admin.com';
         $this->userPassword = '123456';
-        if($this->email == $this->userEmail && $this->password == $this->userPassword)
-        {
+        if($this->email == $this->userEmail && $this->password == $this->userPassword){
             session_start();
-            $_SESSION['id']= rand(1000);
-            
-            header("Location: prime.php");
-        }
-        else
-            
-            {
+            $_SESSION['id']= rand(100, 500);
+            header("Location: home.php");
+        }else{
             return 'Invalid email or Password ';
-            }
+        }
     }
 
 

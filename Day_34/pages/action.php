@@ -35,6 +35,13 @@ else if(isset($_GET['status']))
     }
 }
 
+
+
+
+
+
+
+
 else{
     header('Location: prime.php');
 }

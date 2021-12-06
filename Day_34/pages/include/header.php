@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,6 +12,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
 </head>
 <body>
+
+<?php if(isset($_SESSION['id'])) { ?>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
@@ -25,3 +29,5 @@
         </div>
     </div>
 </nav>
+
+<?php } ?>

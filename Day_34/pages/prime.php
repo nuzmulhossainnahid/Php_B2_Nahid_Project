@@ -1,9 +1,10 @@
 <?php include './include/header.php'; ?>
-<?php
-if (!isset($_SESSION['id'])){
+
+<?php if(!isset($_SESSION['id']))
+{
     header("Location: ../index.php");
-}
-?>
+}?>
+
 
 <section class="py-5">
     <div class="container">
@@ -14,7 +15,6 @@ if (!isset($_SESSION['id'])){
                         <h3>Prime Number</h3>
                     </div>
                     <div class="card-body">
-                        
                         <form action="action.php" method="POST">
                             <div class="form-group row">
                                 <label for="number" class="col-form-label col-md-3">Enter Your Number</label>
