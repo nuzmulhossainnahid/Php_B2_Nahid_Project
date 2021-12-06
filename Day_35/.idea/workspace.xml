@@ -2,11 +2,147 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a3c8264-8082-4529-b25d-9120d0569d20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/classes/ExampleFour.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/classes/ExampleThree.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/classes/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/.idea/Day_33.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/app/classes/Home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/app/classes/Student.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/1 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/1 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/1_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/360_F_312227790_95AbwvvPH7fSDFFGg5bpw951klMW5934.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/4 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/5 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/6 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/7 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/7 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/7-7.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/8 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/8 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/9 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/c-icon1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/c-icon2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/c-icon3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/c-icon4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/c-icon5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/c-icon6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/f-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/f-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/f-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/f-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/f-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/icon-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/icon-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/icon-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/logo-footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/pexels-pixabay-39691.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/pexels-roman-odintsov-5674479.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/sign.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/sm-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/star.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/t-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/5d81ab320a3c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/Screenshot (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/akash_afif_1638358124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/business-website-design-3 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload/fhgd_sdgh__fsyqrt_1638356245.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload003e8b039472de4f2cd19a44d3b78916-young-man-standing-silhouette-by-vexels.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload1-hand-drawn-colorful-seamless-pattern-of-ekaterina-bedoeva.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/upload68-682673_tree-clipart-transparent-background-5-of-transparent-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/uploadapple_PNG12458.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/uploaddownload (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/uploade1aa084c22893fc511643f4de2a09ca1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/uploadhousefinal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/uploadistockphoto-1045886560-612x612.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/uploadistockphoto-1270067126-612x612.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/img/uploadwaist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/js/jquery-3.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/assets/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/pages/action.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/pages/db.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/pages/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/pages/include/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/pages/include/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/pages/manage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/ClassLoader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/InstalledVersions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/autoload_classmap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/autoload_namespaces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/autoload_psr4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/autoload_real.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/autoload_static.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/installed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Work/vendor/composer/installed.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,15 +155,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classes/ExampleThree.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,17 +185,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classes/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="20" column="75" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="75" />
+            <state relative-caret-position="475">
+              <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/classes/Auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/classes/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classes/Teacher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="34" column="101" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="101" />
+            <state relative-caret-position="418">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="e#127#148#0#PHP" expanded="true" />
               </folding>
@@ -85,20 +248,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/Home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -108,12 +257,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pages/home.php" />
-        <option value="$PROJECT_DIR$/app/classes/User.php" />
         <option value="$PROJECT_DIR$/app/classes/ExampleTwo.php" />
         <option value="$PROJECT_DIR$/app/classes/ExampleThree.php" />
         <option value="$PROJECT_DIR$/app/classes/ExampleFour.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/classes/Teacher.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/classes/User.php" />
+        <option value="$PROJECT_DIR$/app/classes/Auth.php" />
+        <option value="$PROJECT_DIR$/pages/action.php" />
+        <option value="$PROJECT_DIR$/pages/login.php" />
       </list>
     </option>
   </component>
@@ -151,6 +303,11 @@
               <item name="Day_35" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Day_35" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Day_35" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Day_35" type="b2602c69:ProjectViewProjectNode" />
@@ -198,22 +355,22 @@
       <option name="presentableId" value="Default" />
       <updated>1638777272724</updated>
       <workItem from="1638777273989" duration="3810000" />
-      <workItem from="1638785327719" duration="2156000" />
+      <workItem from="1638785327719" duration="5928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5966000" />
+    <option name="totallyTimeSpent" value="9738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553517" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49816176" visible="true" weight="0.17889908" />
+      <window_info id="Structure" order="1" sideWeight="0.5018382" side_tool="true" weight="0.16590214" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -222,7 +379,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.0652921" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.0652921" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -237,31 +394,13 @@
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/ExampleThree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="286">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#50#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -272,6 +411,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/ExampleThree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/ExampleTwo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -279,20 +425,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/User.php">
+    <entry file="file://$PROJECT_DIR$/app/classes/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="75" />
+        <state relative-caret-position="154">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/Teacher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="34" column="101" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="101" />
+        <state relative-caret-position="418">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="e#127#148#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
         </state>
       </provider>
     </entry>

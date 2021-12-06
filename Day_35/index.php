@@ -7,10 +7,11 @@ require_once './vendor/autoload.php';
 
 
 use App\classes\Teacher;
+use App\classes\Auth;
 
 
-$teacher = new Teacher();
-$teacher->view();
+$Auth = new Auth();
+$Auth->index();
 
 
 
