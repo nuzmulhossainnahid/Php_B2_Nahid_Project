@@ -9,11 +9,12 @@
 namespace App\classes;
 use App\classes\User;
 use App\classes\ExampleOne;
+use App\classes\ExampleTwo;
 
 
 
 
-class Teacher extends User implements ExampleOne
+class Teacher extends User implements ExampleOne, ExampleTwo
 {
     public $mobile;
     
@@ -39,6 +40,14 @@ class Teacher extends User implements ExampleOne
     public function Three()
     {
         echo 'This Three';
+    }
+    public function four()
+    {
+        echo 'This four';
+    }
+    public function five()
+    {
+        echo 'This five';
     }
     
 }

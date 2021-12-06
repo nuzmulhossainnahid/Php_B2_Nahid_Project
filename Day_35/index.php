@@ -10,7 +10,7 @@ use App\classes\Teacher;
 
 
 $teacher = new Teacher();
-$teacher->Three();
+$teacher->four();
 
 
 
