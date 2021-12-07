@@ -2,12 +2,11 @@
 require_once '../vendor/autoload.php';
 
 
-use App\classes\Auth;
+use App\classes\Person;
 
 
 if(isset($_POST['btn'])) {
-    $auth = new Auth($_POST);
-   $message =  $auth->login();
-   include ('login.php');
+    $person = new Person();
+  $person->save();
 }
 
