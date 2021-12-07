@@ -1,30 +1,29 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Web App Develop-PHP
- * Date: 06-Dec-21
- * Time: 4:14 PM
- */
+
 
 namespace App\classes;
 
 
 abstract class ExampleThree
 {
-    
-    public $valueOne;
-    public $valueTwo;
-    
+
+    public $value1;
+    public $value2;
+
     public function __construct()
     {
-        $this->valueOne=100;
-        $this->valueTwo =200;
+        $this->value1 = 100;
+        $this->value2 = 200;
     }
-    
+
+
     public function ten()
     {
-        $this->valueOne=100;
-        echo $this->valueOne;
+        $this->value1 = 100;
+        echo $this->value1;
     }
+
     abstract function twenty();
+
+
 }

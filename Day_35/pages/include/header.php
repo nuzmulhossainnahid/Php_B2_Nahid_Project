@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -13,21 +11,14 @@
 </head>
 <body>
 
-<?php if(isset($_SESSION['id'])) { ?>
-
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
         <a href="" class="navbar-brand">LOGO</a>
         <div class="navbar-nav ml-auto">
-            <li><a href="home.php" class="nav-link">ADD Student</a></li>
-            <li><a href="action.php" class="nav-link">Manage Student</a></li>
-
-            <li><a href="prime.php" class="nav-link">prime Number</a></li>
-            <li><a href="series.php" class="nav-link">Series Problem</a></li>
-            <li><a href="action.php?status=logout" class="nav-link">Logout</a></li>
+            <li><a href="home.php" class="nav-link">Add User</a></li>
+            <li><a href="action.php?status=manage" class="nav-link">Manage User</a></li>
+            <li><a href="" class="nav-link">Login</a></li>
 
         </div>
     </div>
 </nav>
-
-<?php } ?>
