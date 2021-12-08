@@ -13,6 +13,7 @@ class Person
 {
     private $name;
     private $email;
+    
     private $mobile;
     private $connection;
     private $sql;
@@ -34,10 +35,9 @@ class Person
        
         if ($this->connection)
         {
-            $this->sql = "INSERT INTO test(name, email,mobile) VALUES('$this->name','$this->email','$this->mobile')";
+            $this->sql = "INSERT INTO students(name, email,mobile) VALUES('$this->name','$this->email','$this->mobile')";
             mysqli_query($this->connection,$this->sql);
             echo 'Success';
-            
         }
     }
 }
