@@ -15,8 +15,9 @@
     <div class="container">
         <a href="" class="navbar-brand">LOGO</a>
         <div class="navbar-nav ml-auto">
-            <li><a href="home.php" class="nav-link">Registration</a></li>
-            <li><a href="" class="nav-link">Login</a></li>
+            <li><a href="home.php" class="nav-link">Add Student</a></li>
+            <li><a href="action.php?status=manage" class="nav-link">Manage Student</a></li>
+            <li><a href="action.php?status=manage" class="nav-link">Login</a></li>
 
         </div>
     </div>

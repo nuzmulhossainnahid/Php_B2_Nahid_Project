@@ -13,6 +13,12 @@ if(isset($_POST['btn']))
     $messege = $student->save();
     include 'home.php';
     
-    
-    
+}
+elseif (isset($_GET['status']))
+{
+    if ($_GET['status']=='manage')
+    {
+        $student1 = new Student();
+        $student1->getAllStudentInfo();
+    }
 }
