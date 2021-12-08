@@ -13,12 +13,25 @@ if(isset($_POST['btn']))
     $messege = $student->save();
     include 'home.php';
     
-}
-elseif (isset($_GET['status']))
+    
+}else if(isset($_GET['status']))
 {
-    if ($_GET['status']=='manage')
+    if($_GET['status'] == 'manage')
     {
-        $student1 = new Student();
-        $student1->getAllStudentInfo();
+        $student = new Student();
+        $students =   $student->getAllStudentInfo();
+        include  'manage.php';
     }
+}
+else if(isset($_GET['delete']))
+{
+    $student = new Student();
+    $student->delete($_GET['delete']);
+}
+
+else if(isset($_GET['edit']))
+{
+    $student = new Student();
+    $studentInfo =  $student->getAllStudentInfoById($_GET['edit']);
+    include 'edit.php';
 }
