@@ -17,7 +17,7 @@
         <div class="navbar-nav ml-auto">
             <li><a href="home.php" class="nav-link">Add Student</a></li>
             <li><a href="action.php?status=manage" class="nav-link">Manage Student</a></li>
-            <li><a href="action.php?status=manage" class="nav-link">Login</a></li>
+            <li><a href="action.php?status=manage" class="nav-link">Logout</a></li>
 
         </div>
     </div>
