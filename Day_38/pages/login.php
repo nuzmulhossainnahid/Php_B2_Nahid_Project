@@ -8,9 +8,8 @@
                             <h4>Login Form</h4>
                         </div>
                         <div class="card-body">
-                            <h4 class="text-center text-danger mb-4 text-center"><?php echo isset($message) ? $message: '';?></h4>
+                            <h4 class="text-center text-danger mb-2"><?php echo isset($message) ? $message: '';?></h4>
                             <form action="action.php" method="POST">
-                                
                                 <div class="form-group row">
                                     <label class="col-form-label col-md-3">Email</label>
                                     <div class="col-md-9">

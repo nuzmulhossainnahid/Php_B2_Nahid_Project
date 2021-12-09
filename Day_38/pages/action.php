@@ -44,6 +44,6 @@ else if(isset($_POST['updateBtn']))
 }else if(isset($_POST['loginBtn']))
 {
     $auth = new Auth($_POST);
-    $message =  $auth->login();
-    include 'login.php';
+  $message =  $auth->login();
+  include 'login.php';
 }

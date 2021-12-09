@@ -32,7 +32,7 @@
                                 <div class="form-group row">
                                     <label class="col-form-label col-md-3">Image</label>
                                     <div class="col-md-9">
-                                        <img src="<?php echo $studentInfo['image']?>" alt="">
+                                        <img src="<?php echo $studentInfo['image']?>" width="200" height="200" alt="">
                                         <input type="file" name="image" class="form-control-file"/>
                                     </div>
                                 </div>
