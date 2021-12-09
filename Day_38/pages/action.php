@@ -2,6 +2,7 @@
 
 require_once '../vendor/autoload.php';
 use App\classes\Student;
+use App\classes\Auth;
 
 if (isset($_POST['btn']))
 {
@@ -16,6 +17,10 @@ else if(isset($_GET['status']))
         $student  = new Student();
         $students = $student->getAllStudentInfo();
         include 'manage.php';
+    }else if($_GET['status'] == 'logout')
+    {
+        $auth = new Auth();
+        $auth->logout();
     }
 }
 else if(isset($_GET['delete']))
@@ -36,4 +41,9 @@ else if(isset($_POST['updateBtn']))
     $message    = $student->updateStudentInfo($studentInfo);
     $students   = $student->getAllStudentInfo();
     include 'manage.php';
+}else if(isset($_POST['loginBtn']))
+{
+    $auth = new Auth($_POST);
+    $message =  $auth->login();
+    include 'login.php';
 }
