@@ -26,7 +26,7 @@
                 <li><a href="action.php?status=manage-subject" class="nav-link">Manage Subject</a></li>
             <?php } else { ?>
 
-                <li><a href="" class="nav-link">Add Subject</a></li>
+                <li><a href="action.php?status=my-subject&id=<?Php echo $_SESSION['id']; ?>" class="nav-link">My Subject</a></li>
                 <li><a href="" class="nav-link">My Profile</a></li>
 
             <?php } ?>

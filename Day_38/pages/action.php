@@ -30,6 +30,16 @@ else if(isset($_GET['status']))
         $students =$subject->index();
         include 'add-subject.php';
     }
+    else if($_GET['status'] == 'my-subject')
+    {
+        $id = $_GET['id'];
+        $subject = new Subject();
+        $subjects = $subject->getMySubject($id);
+//        echo '<pre>';
+//        print_r($subjects);
+//        echo'</pre>';
+        include "my-subject.php";
+    }
     
 }
 else if(isset($_GET['delete']))

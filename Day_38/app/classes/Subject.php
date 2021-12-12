@@ -64,4 +64,24 @@ class Subject extends Database
         }
     }
     
+    public function getMySubject($id)
+    {
+        
+        $this->sql = "SELECT * FROM subjects WHERE student_id = '$id'";
+        if ($this->queryresult= mysqli_query($this->con, $this->sql))
+        {
+            
+            while ($this->row = mysqli_fetch_assoc($this->queryresult))
+            {
+                array_push($this->data, $this->row['subject']);
+                
+            }
+            return $this->data;
+        }
+        
+        else
+        {
+            die('Query Problem'.mysqli_error($this->con));
+        }
+    }
 }
