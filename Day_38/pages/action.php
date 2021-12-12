@@ -40,6 +40,11 @@ else if(isset($_GET['status']))
 //        echo'</pre>';
         include "my-subject.php";
     }
+    else if($_GET['status'] == 'manage-subject')
+    {
+      
+        include 'manage-subject.php';
+    }
     
 }
 else if(isset($_GET['delete']))
