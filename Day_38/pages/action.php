@@ -3,6 +3,7 @@
 require_once '../vendor/autoload.php';
 use App\classes\Student;
 use App\classes\Auth;
+use App\classes\Subject;
 
 if (isset($_POST['btn']))
 {
@@ -17,11 +18,19 @@ else if(isset($_GET['status']))
         $student  = new Student();
         $students = $student->getAllStudentInfo();
         include 'manage.php';
-    }else if($_GET['status'] == 'logout')
+    }
+    else if($_GET['status'] == 'logout')
     {
         $auth = new Auth();
         $auth->logout();
     }
+    else if($_GET['status'] == 'add-subject')
+    {
+        $subject = new Subject();
+        $students =$subject->index();
+        include 'add-subject.php';
+    }
+    
 }
 else if(isset($_GET['delete']))
 {

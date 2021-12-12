@@ -22,6 +22,8 @@
             <?php if($_SESSION['user_type'] == 1) {?>
             <li><a href="home.php" class="nav-link">Add Student</a></li>
             <li><a href="action.php?status=manage" class="nav-link">Manage Student</a></li>
+                <li><a href="action.php?status=add-subject" class="nav-link">Add Subject</a></li>
+                <li><a href="action.php?status=manage-subject" class="nav-link">Manage Subject</a></li>
             <?php } else { ?>
 
                 <li><a href="" class="nav-link">Add Subject</a></li>

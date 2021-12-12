@@ -28,7 +28,7 @@
                                 </thead>
                                 <tbody>
                                     <?php foreach ($students as $student) { ?>
-                                    <tr>
+                                    <tr >
                                         <td><?php echo $student['name']?></td>
                                         <td><?php echo $student['email']?></td>
                                         <td><?php echo $student['mobile']?></td>
