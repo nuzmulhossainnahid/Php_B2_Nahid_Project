@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 08, 2021 at 12:45 PM
+-- Generation Time: Dec 12, 2021 at 12:35 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -33,18 +33,50 @@ CREATE TABLE `students` (
   `email` varchar(256) NOT NULL,
   `password` varchar(256) NOT NULL,
   `mobile` varchar(256) NOT NULL,
-  `image` text NOT NULL
+  `image` text NOT NULL,
+  `user_type` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `name`, `email`, `password`, `mobile`, `image`) VALUES
-(9, 'omonu', 'omonu@gmail.com', '63024232f4d2830e3c53bbc0ab17932c', '01725', '../assets/img/1.jpg'),
-(10, 'Hablu', 'hablu@gmail.com', 'd345cd7dbae275f51014a2605fa54d0c', '0179382069', '../assets/img/8.jpg'),
-(11, 'MD. ABU MUSHA', 'abumusaa787@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '0132546521', '../assets/img/7.jpg'),
-(12, ' MUSHA', 'abumusaa787@gmail.com', 'd41d8cd98f00b204e9800998ecf8427e', '0132546521', '../assets/img/');
+INSERT INTO `students` (`id`, `name`, `email`, `password`, `mobile`, `image`, `user_type`) VALUES
+(23, 'nahid', 'admin@gmail.com', '202cb962ac59075b964b07152d234b70', '', '../assets/img/istockphoto-1270067126-612x612.jpg', 1),
+(24, 'Student', 'student@gmail.com', '202cb962ac59075b964b07152d234b70', '123', '../assets/img/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg', 0),
+(25, 'Hasan', 'abc@gamil.com', '202cb962ac59075b964b07152d234b70', '123', '../assets/img/download.jpg', 0),
+(26, 'Rahim', 'fdgd@gamil.com', '202cb962ac59075b964b07152d234b70', '123', '../assets/img/istockphoto-1270067126-612x612.jpg', 0),
+(27, 'Zahid', 'fdgd@gamil.com', '202cb962ac59075b964b07152d234b70', '123', '../assets/img/istockphoto-1045886560-612x612.jpg', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subjects`
+--
+
+CREATE TABLE `subjects` (
+  `id` int(10) NOT NULL,
+  `student_id` int(10) NOT NULL,
+  `subject` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `subjects`
+--
+
+INSERT INTO `subjects` (`id`, `student_id`, `subject`) VALUES
+(1, 26, 'English'),
+(2, 26, 'Math'),
+(3, 26, 'Chemistry'),
+(4, 27, 'Physics'),
+(5, 26, 'Math'),
+(6, 26, 'Chemistry'),
+(7, 26, 'Physics'),
+(8, 24, 'Bangla'),
+(9, 24, 'English'),
+(10, 24, 'Math'),
+(11, 24, 'Chemistry'),
+(12, 24, 'Physics');
 
 -- --------------------------------------------------------
 
@@ -53,7 +85,7 @@ INSERT INTO `students` (`id`, `name`, `email`, `password`, `mobile`, `image`) VA
 --
 
 CREATE TABLE `test` (
-  `id` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
   `name` varchar(256) NOT NULL,
   `email` varchar(256) NOT NULL,
   `mobile` varchar(256) NOT NULL
@@ -64,12 +96,8 @@ CREATE TABLE `test` (
 --
 
 INSERT INTO `test` (`id`, `name`, `email`, `mobile`) VALUES
-(1, 'MD. ABU MUSHA', 'abumusaa787@gmail.com', '021545121'),
-(2, 'MD. ABU MUSHA', 'abumusaa787@gmail.com', '546425'),
-(3, 'MD. ABU MUSHA', 'abumusaa787@gmail.com', '5324242'),
-(4, 'MD. ABU MUSHA', 'abumusaa787@gmail.com', '0173982'),
-(5, 'MD. ABU MUSHA', 'abumusaa787@gmail.com', '017932'),
-(6, 'hablu', 'hablu@gmail.com', '022615214');
+(2, 'Nahid4', 'admin@admin.com', '1254567'),
+(3, 'Nahid', 'admin@admin.com', '1234');
 
 --
 -- Indexes for dumped tables
@@ -79,6 +107,12 @@ INSERT INTO `test` (`id`, `name`, `email`, `mobile`) VALUES
 -- Indexes for table `students`
 --
 ALTER TABLE `students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `subjects`
+--
+ALTER TABLE `subjects`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -95,13 +129,19 @@ ALTER TABLE `test`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT for table `subjects`
+--
+ALTER TABLE `subjects`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `test`
 --
 ALTER TABLE `test`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
