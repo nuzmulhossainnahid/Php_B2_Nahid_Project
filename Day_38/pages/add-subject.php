@@ -14,10 +14,10 @@
                             <div class="form-group row">
                                 <label class="col-form-label col-md-3">Student Name</label>
                                 <div class="col-md-9">
-                                    <select name="" id="" class="form-control">
-                                        <option value="">-- Select Student Name --</option>
+                                    <select name="student_id" id="" class="form-control">
+                                        <option value="" disabled selected>-- Select Student Name --</option>
                                         <?php foreach ($students as $student) { ?>
-                                        <option value=""><?php echo $student['name']; ?></option>
+                                        <option value="<?php echo $student['id']; ?>"><?php echo $student['name']; ?></option>
                                         <?php } ?>
                                         
                                     </select>
@@ -26,18 +26,18 @@
                             <div class="form-group row">
                                 <label class="col-form-label col-md-3">Subject Name</label>
                                 <div class="col-md-9">
-                                    <label for=""><input type="checkbox" name="subject" value="Bangla" >Bangla </label>
-                                    <label for=""><input type="checkbox" name="subject" value="English" >English </label>
-                                    <label for=""><input type="checkbox" name="subject" value="Math" >Math </label>
-                                    <label for=""><input type="checkbox" name="subject" value="Chemistry" >Chemistry </label>
-                                    <label for=""><input type="checkbox" name="subject" value="Physics" >Physics </label>
+                                    <label for=""><input type="checkbox" name="subject[]" value="Bangla" >Bangla </label>
+                                    <label for=""><input type="checkbox" name="subject[]" value="English" >English </label>
+                                    <label for=""><input type="checkbox" name="subject[]" value="Math" >Math </label>
+                                    <label for=""><input type="checkbox" name="subject[]" value="Chemistry" >Chemistry </label>
+                                    <label for=""><input type="checkbox" name="subject[]" value="Physics" >Physics </label>
                                     
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-form-label col-md-3"></label>
                                 <div class="col-md-9">
-                                    <input type="Add Subject" name="subjectBtn" class="btn btn-outline-danger btn-block" value="Register"/>
+                                    <input type="submit" name="subjectBtn" class="btn btn-outline-danger btn-block" value="Add Subject"/>
                                 </div>
                             </div>
                         </form>

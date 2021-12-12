@@ -19,10 +19,17 @@ class Subject extends Database
     private $sql;
     private $queryresult;
     private $row;
+    private $studentId;
+    private $subject=[];
     
-    public function __construct()
+    public function __construct($data=null)
     {
         $this->con = $this->connection();
+        if ($data)
+        {
+            $this->studentId = $data['student_id'];
+            $this->subject = $data['subject'];
+        }
     }
     
     public function index()
@@ -46,6 +53,15 @@ class Subject extends Database
             die('Query Problem'.mysqli_error($this->con));
         }
        
+    }
+    
+    public function addSubject()
+    {
+        foreach ($this->subject as $item)
+        {
+            $this->sql = "INSERT INTO subjects (student_id, subject) VALUES ('$this->studentId', '$item')";
+        mysqli_query($this->con, $this->sql);
+        }
     }
     
 }
