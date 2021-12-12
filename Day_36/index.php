@@ -9,7 +9,7 @@ use App\classes\Home;
 
 
 $home = new Home();
-$home->index();
+$home->index();//home
 
 
 

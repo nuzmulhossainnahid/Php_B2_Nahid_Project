@@ -1,14 +1,18 @@
 <?php include 'includes/header.php'; ?>
 <?php
-if (!isset($_SESSION['id']))
+if(!isset($_SESSION['id']))
 {
     header('Location: login.php');
+
+
+}else if($_SESSION['user_type'] == 0)
+{
+
+        header('Location: dashboard.php');
+
 }
 
-elseif ($_SESSION['user_type']==1)
-{
-    header('Location: dashboard.php');
-}
+
 ?>
 <section class="py-5">
     <div class="container">

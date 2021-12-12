@@ -2,7 +2,7 @@
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 mx-auto">
+                <div class="col-md-12 mx-auto">
                     <div class="card">
                         <div class="card-header text-center">
                             <h4>All Student Info Goes Here</h4>
@@ -10,7 +10,7 @@
                         <div class="card-body">
                             <h4 class="text-center text-success"><?php echo isset($message) ? $message: ''; ?></h4>
 
-                            <?php  if(isset($_SESSION['message'])) { ?>
+                            <?php if(isset($_SESSION['message'])) { ?>
                             <h4 class="text-center text-success">
                                 <?php echo $_SESSION['message']; unset($_SESSION['message']); ?>
                             </h4>

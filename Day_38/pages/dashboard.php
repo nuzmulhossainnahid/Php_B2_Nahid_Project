@@ -3,13 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto">
-                    <div class="card">
-                        <div class="card-header text-center">
-                            <h4>Registration Form</h4>
-                        </div>
-                        <div class="card-body">
-                            <h3>Deshbord</h3>
-                        </div>
+                    <div class="card card-body">
+                           <h3 class="text-center">My Deshboard</h3>
                     </div>
                 </div>
             </div>
