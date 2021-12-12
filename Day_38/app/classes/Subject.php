@@ -22,6 +22,7 @@ class Subject extends Database
     private $studentId;
     private $subject=[];
     
+    
     public function __construct($data=null)
     {
         $this->con = $this->connection();
@@ -66,7 +67,6 @@ class Subject extends Database
     
     public function getMySubject($id)
     {
-        
         $this->sql = "SELECT * FROM subjects WHERE student_id = '$id'";
         if ($this->queryresult= mysqli_query($this->con, $this->sql))
         {

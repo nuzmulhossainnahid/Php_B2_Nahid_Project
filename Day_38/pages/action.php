@@ -32,7 +32,7 @@ else if(isset($_GET['status']))
     }
     else if($_GET['status'] == 'my-subject')
     {
-        $id = $_GET['id'];
+        $id = base64_decode($_GET['id']);
         $subject = new Subject();
         $subjects = $subject->getMySubject($id);
 //        echo '<pre>';
