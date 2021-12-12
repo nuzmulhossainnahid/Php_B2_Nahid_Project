@@ -7,6 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/all.css"/>
     <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
 </head>
 <body>
@@ -15,7 +16,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
-        <a href="" class="navbar-brand">LOGO</a>
+        <a href="" class="navbar-brand">NAHID</a>
         <ul class="navbar-nav ml-auto">
 
             <?php if($_SESSION['user_type'] == 1) {?>
