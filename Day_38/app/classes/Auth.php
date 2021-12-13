@@ -42,12 +42,12 @@ class Auth
                 $this->user = mysqli_fetch_assoc($this->queryResult);
                 if($this->user)
                 {
-                   session_start();
-                   $_SESSION['id'] = $this->user['id'];
-                   $_SESSION['name'] = $this->user['name'];
-                   $_SESSION['user_type'] = $this->user['user_type'];
+                    session_start();
+                    $_SESSION['id'] = $this->user['id'];
+                    $_SESSION['name'] = $this->user['name'];
+                    $_SESSION['user_type'] = $this->user['user_type'];
 
-                   header('Location: dashboard.php');
+                    header('Location: dashboard.php');
 
                 }else
                 {
@@ -67,11 +67,11 @@ class Auth
 
     public function logout()
     {
-    session_start();
-    unset($_SESSION['id']);
-    unset($_SESSION['name']);
-    unset($_SESSION['user_type']);
-    header('Location: ../index.php');
+        session_start();
+        unset($_SESSION['id']);
+        unset($_SESSION['name']);
+        unset($_SESSION['user_type']);
+        header('Location: ../index.php');
     }
 
 

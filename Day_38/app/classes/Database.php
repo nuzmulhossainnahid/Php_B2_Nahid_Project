@@ -16,18 +16,18 @@ class Database
     private $password;
     private $link;
     private $dbName;
-    
-    
+
+
     protected function connection()
     {
-        
+
         $this->hostName = 'localhost';
         $this->userName = 'root';
         $this->password = '';
         $this->dbName = 'example_two';
-        
-        
-        
+
+
+
         $this->link = mysqli_connect($this->hostName, $this->userName, $this->password, $this->dbName);
         if($this->link)
         {
@@ -36,5 +36,5 @@ class Database
             die('connection Problem..');
         }
     }
-    
+
 }

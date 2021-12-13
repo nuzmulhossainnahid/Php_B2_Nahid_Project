@@ -11,24 +11,24 @@
                             <h4 class="text-center text-success"><?php echo isset($message) ? $message: ''; ?></h4>
 
                             <?php if(isset($_SESSION['message'])) { ?>
-                            <h4 class="text-center text-success">
-                                <?php echo $_SESSION['message']; unset($_SESSION['message']); ?>
-                            </h4>
+                                <h4 class="text-center text-success">
+                                    <?php echo $_SESSION['message']; unset($_SESSION['message']); ?>
+                                </h4>
                             <?php } ?>
 
                             <table class="table table-bordered table-hover">
                                 <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Mobile</th>
-                                        <th>Image</th>
-                                        <th>Action</th>
-                                    </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Mobile</th>
+                                    <th>Image</th>
+                                    <th>Action</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($students as $student) { ?>
-                                    <tr >
+                                <?php foreach ($students as $student) { ?>
+                                    <tr>
                                         <td><?php echo $student['name']?></td>
                                         <td><?php echo $student['email']?></td>
                                         <td><?php echo $student['mobile']?></td>
@@ -40,7 +40,7 @@
                                             <a href="action.php?delete=<?php echo $student['id']?>" onclick="return confirm('Are you sure to delete this');" class="btn btn-outline-danger">Delete</a>
                                         </td>
                                     </tr>
-                                    <?php } ?>
+                                <?php } ?>
                                 </tbody>
                             </table>
                         </div>

@@ -4,7 +4,6 @@ require_once '../vendor/autoload.php';
 use App\classes\Student;
 use App\classes\Auth;
 use App\classes\Subject;
-
 if (isset($_POST['btn']))
 {
     $student = new Student($_POST, $_FILES);
@@ -18,34 +17,52 @@ else if(isset($_GET['status']))
         $student  = new Student();
         $students = $student->getAllStudentInfo();
         include 'manage.php';
-    }
-    else if($_GET['status'] == 'logout')
+    }else if($_GET['status'] == 'logout')
     {
         $auth = new Auth();
         $auth->logout();
-    }
-    else if($_GET['status'] == 'add-subject')
+    }else if($_GET['status'] == 'add-subject')
     {
         $subject = new Subject();
-        $students =$subject->index();
-        include 'add-subject.php';
+        $students = $subject->index();
+        include "add-subject.php";
+    }else if($_GET['status'] == 'manage-subject')
+    {
+        $data = [
+            0 => [
+                'name' => 'Habib',
+                'subject' => ['physics', 'math', 'english'],
+            ],
+
+            1 => [
+                'name' => 'Musha',
+                'subject' => ['Bangla', 'English'],
+            ]
+        ];
+
+        echo '<pre>';
+
+        print_r($data);
+        echo '</pre>';
+        exit();
+        include 'manage-subject.php';
     }
+
+
+
     else if($_GET['status'] == 'my-subject')
     {
         $id = base64_decode($_GET['id']);
         $subject = new Subject();
         $subjects = $subject->getMySubject($id);
+        include "my-subject.php";
 //        echo '<pre>';
 //        print_r($subjects);
-//        echo'</pre>';
-        include "my-subject.php";
+//        echo '</pre>';
+//        exit();
+
+
     }
-    else if($_GET['status'] == 'manage-subject')
-    {
-      
-        include 'manage-subject.php';
-    }
-    
 }
 else if(isset($_GET['delete']))
 {
@@ -68,15 +85,17 @@ else if(isset($_POST['updateBtn']))
 }else if(isset($_POST['loginBtn']))
 {
     $auth = new Auth($_POST);
-  $message =  $auth->login();
-  include 'login.php';
-}
-else if (isset($_POST['subjectBtn']))
+    $message =  $auth->login();
+    include 'login.php';
+}else if(isset($_POST['subjectBtn']))
 {
-    
+//    echo '<pre>';
+//    print_r($_POST);
+//    echo '</pre>';
+//    exit();
+
     $subject = new Subject($_POST);
     $subject->addSubject();
-    $message = "Data Save Successfully";
-    include "add-subject.php";
-    
+    $message = "Data Save successfully";
+    include 'add-subject.php';
 }
