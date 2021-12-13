@@ -42,7 +42,7 @@ else if(isset($_GET['status']))
     }
     else if($_GET['status'] == 'manage-subject')
     {
-      
+
         include 'manage-subject.php';
     }
     

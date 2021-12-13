@@ -84,4 +84,6 @@ class Subject extends Database
             die('Query Problem'.mysqli_error($this->con));
         }
     }
+
+
 }
