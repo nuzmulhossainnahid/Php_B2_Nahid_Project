@@ -17,20 +17,15 @@
                                     <th class="text-center">Your Subject Name</th>
                                 </tr>
                                 <tr>
-                                   
-                                    
                                     <td>
-                                <select class="form-control" name="student_id">
-                                <option selected disabled> -- Select your Subject Name --</option>
-                                    <?php foreach ($subjects as $subject) { ?>
-                                <option ><?php echo $subject; ?></option>
-                                    
-                                    <?php } ?>
-                                </select>
+                                        <?php foreach ($subjects as $subject) { ?>
+                                        <div class="card text-white bg-secondary mb-3 text-center" style="max-width: 100%;">
+                                            
+                                            <div class="card-body">
+                                                <h5 class="card-title"><?php echo $subject; ?></h5>
+                                            </div>
+                                            <?php } ?>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center"><input type="submit" value="Submit" class="btn btn-outline-success"></td>
                                 </tr>
                             </table>
                         </div>
