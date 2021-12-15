@@ -26,6 +26,10 @@ Route::get('/register-now',[
     'uses'=>'App\Http\Controllers\HomeController@registation',
     'as'=>'register-now'
 ]);
+Route::post('/register',[
+    'uses'=>'App\Http\Controllers\HomeController@newrestater',
+    'as'=>'register-form'
+]);
 
 
 //Route::get('/bitm', [
