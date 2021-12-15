@@ -13,21 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    
-    return view('test');
-});
-
-Route::get('/bitm', [
-    'uses'=>'App\Http\Controllers\TestController@index',
-    'as'=>'bitm'
+Route::get('/',[
+    'uses'=>'App\Http\Controllers\HomeController@index',
+    'as'=>'home'
+]);
+Route::get('/about-us',[
+    'uses'=>'App\Http\Controllers\HomeController@about',
+    'as'=>'about-us'
 ]);
 
-Route::get('/allcatagary', [
-    'uses'=>'App\Http\Controllers\calageryController@catagary',
-    'as'=>'all'
+Route::get('/register-now',[
+    'uses'=>'App\Http\Controllers\HomeController@registation',
+    'as'=>'register-now'
 ]);
-Route::get('/basis/seip',[
-    'uses'=>'App\Http\Controllers\TestController@seip',
-    'as'=>'seip'
-]);
+
+
+//Route::get('/bitm', [
+//    'uses'=>'App\Http\Controllers\TestController@index',
+//    'as'=>'bitm'
+//]);
+//
+//Route::get('/allcatagary', [
+//    'uses'=>'App\Http\Controllers\calageryController@catagary',
+//    'as'=>'all'
+//]);
+//Route::get('/basis/seip',[
+//    'uses'=>'App\Http\Controllers\TestController@seip',
+//    'as'=>'seip'
+//]);
