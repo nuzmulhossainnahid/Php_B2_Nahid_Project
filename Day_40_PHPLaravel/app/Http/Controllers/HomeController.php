@@ -93,6 +93,9 @@ class HomeController extends Controller
         'char' => "Total Char = ".$this->total_char
     ]);
     }
+    
+//    php artisan make:controller CategoryController -r
+//php artisan route:list
 
 
 }

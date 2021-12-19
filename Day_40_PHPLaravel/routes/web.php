@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BrandController;
 
 Route::get('/',[
     'uses'=>'App\Http\Controllers\HomeController@index',
@@ -34,5 +36,8 @@ Route::post('/count',[
     'uses'=>'App\Http\Controllers\HomeController@countResult',
     'as'=>'count'
 ]);
+Route::resource('/cata-one',CategoryController::class);
+
+Route::resource('/brand',BrandController::class);
 
 
