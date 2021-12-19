@@ -84,7 +84,8 @@ class HomeController extends Controller
     public function countResult(Request $request)
     {
     $this->total_word =str_word_count($request->given_string);
-    $this->total_char =strlen($request->given_string);
+    $this->total_char =strlen(str_replace(' ','',$request->given_string));
+    
     
     return view('count',
         [
