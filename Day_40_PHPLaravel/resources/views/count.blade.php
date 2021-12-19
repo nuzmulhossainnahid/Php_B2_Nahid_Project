@@ -16,7 +16,7 @@
                         <div class="form-group row">
                             <label class="col-form-label col-md-3">Result</label>
                             <div class="col-md-9">
-                                <textarea name="" id="" readonly class="form-control">{{isset($result)?$result:''}}</textarea>
+                                <textarea name="" id="" readonly class="form-control">{{isset($word)?$word:''}} {{"\n"}} {{isset($char)?$char:''}}</textarea>
                             </div>
                         </div>
 

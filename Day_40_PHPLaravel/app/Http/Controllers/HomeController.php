@@ -16,6 +16,9 @@ class HomeController extends Controller
     protected $i;
     protected $result;
     protected $even;
+    private $total_word;
+    private $total_char;
+    
     
     
     public function index()
@@ -80,7 +83,14 @@ class HomeController extends Controller
     }
     public function countResult(Request $request)
     {
-    return $request->all();
+    $this->total_word =str_word_count($request->given_string);
+    $this->total_char =strlen($request->given_string);
+    
+    return view('count',
+        [
+        'word' => "Total Word = ".$this->total_word,
+        'char' => "Total Char = ".$this->total_char
+    ]);
     }
 
 
