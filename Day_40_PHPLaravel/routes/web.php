@@ -2,17 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/',[
     'uses'=>'App\Http\Controllers\HomeController@index',
     'as'=>'home'
@@ -31,17 +20,19 @@ Route::post('/register',[
     'as'=>'register-form'
 ]);
 
+//class 42
+Route::post('/result',[
+    'uses'=>'App\Http\Controllers\HomeController@result',
+    'as'=>'result'
+]);
 
-//Route::get('/bitm', [
-//    'uses'=>'App\Http\Controllers\TestController@index',
-//    'as'=>'bitm'
-//]);
-//
-//Route::get('/allcatagary', [
-//    'uses'=>'App\Http\Controllers\calageryController@catagary',
-//    'as'=>'all'
-//]);
-//Route::get('/basis/seip',[
-//    'uses'=>'App\Http\Controllers\TestController@seip',
-//    'as'=>'seip'
-//]);
+Route::get('/count',[
+    'uses'=>'App\Http\Controllers\HomeController@count',
+    'as'=>'count'
+]);
+Route::post('/count',[
+    'uses'=>'App\Http\Controllers\HomeController@countResult',
+    'as'=>'count'
+]);
+
+

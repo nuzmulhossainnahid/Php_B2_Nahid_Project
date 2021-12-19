@@ -13,6 +13,11 @@ class HomeController extends Controller
     private $fast_name;
     private $last_name;
     private $full_name;
+    protected $i;
+    protected $result;
+    protected $even;
+    
+    
     public function index()
     {
         $this->product = new Product();
@@ -41,6 +46,41 @@ class HomeController extends Controller
 //       echo '<pre>';
 //       print_r($_POST);
 //       echo '</pre>';
+    }
+    
+    
+    public function result(Request $request){
+        
+        for ($this->i=$request->starting_number; $this->i<= $request->ending_number; $this->i++)
+        {
+            if ($request->choice =='odd')
+            {
+                if (($this->i%2)!=0)
+                {
+                    $this->result .= $this->i .' ';
+                }
+                
+                
+            }
+            elseif ($request->choice =='even')
+            {
+                if (($this->i%2)==0)
+                {
+                    $this->result .= $this->i .' ';
+                }
+            }
+            
+            
+        }
+        return view('about',['result'=> $this->result]);
+    }
+    public function count()
+    {
+        return view('count');
+    }
+    public function countResult(Request $request)
+    {
+    return $request->all();
     }
 
 

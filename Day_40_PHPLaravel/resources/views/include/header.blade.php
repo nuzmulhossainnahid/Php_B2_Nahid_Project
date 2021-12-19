@@ -18,6 +18,7 @@
             <li><a href="{{route('home')}}" class="nav-link">Home</a></li>
             <li><a href="{{route('about-us')}}" class="nav-link">About</a></li>
             <li><a href="{{route('register-now')}}" class="nav-link">Registation</a></li>
+            <li><a href="{{route('count')}}" class="nav-link">Count</a></li>
             <li><a href="" class="nav-link">Logout</a></li>
         </ul>
     </div>
