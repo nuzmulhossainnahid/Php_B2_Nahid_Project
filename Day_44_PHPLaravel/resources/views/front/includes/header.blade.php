@@ -90,19 +90,19 @@
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="{{route('category')}}">Products</a></li>
                                     <li><a href="{{route('product-details')}}">Product Details</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="{{route('checkout')}}">Checkout</a></li>
+                                    <li><a href="{{route('cart')}}">Cart</a></li>
+                                    <li><a href="{{route('login')}}">Login</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
-                                    <li><a href="blog.html">Blog List</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
+                                    <li><a href="{{route('blog')}}">Blog List</a></li>
+                                    <li><a href="{{route('blogSingle')}}">Blog Single</a></li>
                                 </ul>
                             </li>
-                            <li><a href="404.html">404</a></li>
-                            <li><a href="contact-us.html">Contact</a></li>
+                            <li><a href="{{route('not404')}}">404</a></li>
+                            <li><a href="{{route('contactUs')}}">Contact</a></li>
                         </ul>
                     </div>
                 </div>

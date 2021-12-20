@@ -23,7 +23,10 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
     }
-
+//php artisan migrate
+//php artisan make:migration create_students_table
+//php artisan migrate:fresh
+//php artisan make:migration at_password_column --table=student
     /**
      * Reverse the migrations.
      *

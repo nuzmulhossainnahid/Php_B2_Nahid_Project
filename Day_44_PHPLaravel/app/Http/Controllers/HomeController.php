@@ -23,5 +23,33 @@ class HomeController extends Controller
     {
         return view('front.productdetails');
     }
+    public function checkout()
+    {
+        return view('front.checkout');
+    }
+    public function cart()
+    {
+        return view('front.cart');
+    }
+    public function login()
+    {
+        return view('front.login');
+    }
+    public function blog()
+    {
+        return view('front.blog');
+    }
+    public function blogSingle()
+    {
+        return view('front.blogSingle');
+    }
+    public function contactUs()
+    {
+        return view('front.contactUs');
+    }
+    public function not404()
+{
+
+}
     
 }
