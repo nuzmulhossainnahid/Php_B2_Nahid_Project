@@ -19,7 +19,11 @@
                     <div class="contact-form">
                         <h2 class="title text-center">Get In Touch</h2>
                         <div class="status alert alert-success" style="display: none"></div>
-                        <form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+                        @if($message =Session::get('message'))
+                            <h3 class="text-center text-success">{{$message}}</h3>
+                        @endif
+                        <form action="{{route('contact')}}" id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+                            @csrf
                             <div class="form-group col-md-6">
                                 <input type="text" name="name" class="form-control" required="required" placeholder="Name">
                             </div>
