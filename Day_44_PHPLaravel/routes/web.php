@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/',[
     'uses'=>'App\Http\Controllers\HomeController@index',
@@ -49,4 +50,15 @@ Route::get('/contactUs',[
 Route::get('/not404',[
     'uses'=>'App\Http\Controllers\HomeController@not404',
     'as'=>'not404'
+]);
+
+Route::get('/add-blog',[
+    'uses'=>'App\Http\Controllers\BlogController@index',
+    'as'=>'add-blog'
+]);
+
+
+Route::post('/new-blog',[
+    'uses'=>'App\Http\Controllers\BlogController@create',
+    'as'=>'new-blog'
 ]);
