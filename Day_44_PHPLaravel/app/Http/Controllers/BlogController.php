@@ -18,10 +18,13 @@ class BlogController extends Controller
        return redirect()->back()->with('message','Blog info create successful');
    
    }
-   public function manage()
-   {
+    public function manage(){
 //      $this->blogs =  Blog::all();
-      $this->blogs =  Blog::orderBy('id', 'desc')->get();
-       return view('blog.manage', ['blogs'=> $this->blogs]);
-   }
+        $this->blogs =  Blog::orderBy('id','desc')->get();
+//      $this->blogs =  Blog::orderBy('id','desc')->take(3)->get();
+//      $this->blogs =  Blog::orderBy('id','desc')->first();
+//      return $this->blogs;
+        
+        return view('blog.manage',['blogs' => $this->blogs]);
+    }
 }
