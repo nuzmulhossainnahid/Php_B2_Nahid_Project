@@ -32,11 +32,14 @@
                                     <tr class="text-center">
                                         <td>1</td>
                                         <td>{{$blog->title}}</td>
-                                        <td>{{$blog->author}}</td>
-                                        <td><img src="{{asset($blog->image)}}" alt="" height="200" width="200"/> </td>
-                                        <td>{{$blog->description}}</td>
+                                        <td>{{$blog->author_name}}</td>
+                                        <td><img src="{{asset($blog->image)}}" alt="" height="100" width="100"/> </td>
+                                        <td style="width: 30%">{{$blog->description}}</td>
 
-                                        <td>1</td>
+                                        <td>
+                                            <a href="{{route('edit-blog', ['id'=>$blog->id])}}" class="btn btn-warning ">Edit</a>
+                                            <a href="" class="btn btn-danger ">Delete</a>
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>

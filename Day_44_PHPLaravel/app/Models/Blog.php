@@ -19,7 +19,7 @@ class Blog extends Model
         if (self::$image)
         {
             self::$imageName = self::$image->getClientOriginalName();
-            self::$directory ='blog-image';
+            self::$directory ='blog-image/';
             self::$image->move(self::$directory, self::$imageName);
             return self::$directory.self::$imageName;
         }

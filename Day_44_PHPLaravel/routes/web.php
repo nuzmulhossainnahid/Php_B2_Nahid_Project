@@ -73,3 +73,9 @@ Route::get('/manage-blog',[
     'uses'=>'App\Http\Controllers\BlogController@manage',
     'as'=>'manage-blog'
 ]);
+
+
+Route::get('/edit-blog/{id}',[
+    'uses'=>'App\Http\Controllers\BlogController@edit',
+    'as'=>'edit-blog'
+]);

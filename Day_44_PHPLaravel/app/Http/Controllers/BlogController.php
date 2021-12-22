@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
     private $blogs;
+    private $blog;
    public function index()
    {
        return view('blog.add');
@@ -26,5 +27,11 @@ class BlogController extends Controller
 //      return $this->blogs;
         
         return view('blog.manage',['blogs' => $this->blogs]);
+    }
+    
+    public function edit($id)
+    {
+        $this->blog =  Blog::find($id);
+        return view('blog.edit',['blog'=>$this->blog]);
     }
 }
