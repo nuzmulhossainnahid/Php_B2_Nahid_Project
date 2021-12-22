@@ -17,8 +17,9 @@
                             @if($message =Session::get('message'))
                                 <h3 class="text-center text-success">{{$message}}</h3>
                             @endif
-                            <form action="{{route('new-blog')}}" method="POST" enctype="multipart/form-data">
+                            <form action="{{route('update-blog')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
+                                <input type="hidden" value="{{$blog->id}}" name="id">
                                 <div class="form-group row">
                                     <label for="" class="col-form-label col-md-3 text-center">Blog Title</label>
                                     <div class="col-md-9">

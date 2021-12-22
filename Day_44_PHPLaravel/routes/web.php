@@ -79,3 +79,9 @@ Route::get('/edit-blog/{id}',[
     'uses'=>'App\Http\Controllers\BlogController@edit',
     'as'=>'edit-blog'
 ]);
+
+
+Route::post('/update-blog',[
+    'uses'=>'App\Http\Controllers\BlogController@update',
+    'as'=>'update-blog'
+]);

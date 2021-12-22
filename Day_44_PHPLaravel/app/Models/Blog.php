@@ -12,6 +12,7 @@ class Blog extends Model
     private static $image;
     private static $imageName;
     private static $directory;
+    private static $imageUrl;
     use HasFactory;
     protected static function getImageUrl($request)
     {
@@ -33,10 +34,29 @@ class Blog extends Model
     public static function newBlog($request)
     {
         self::$blog = new Blog();
-        self::$blog->title = $request->title;
+        self::$blog->title       = $request->title;
         self::$blog->author_name = $request->author_name;
         self::$blog->description = $request->description;
-        self::$blog->image = self::getImageUrl($request);
+        self::$blog->image       = self::getImageUrl($request);
+        self::$blog->save();
+    }
+    public static function updateBlog($request)
+    {
+        self::$blog = Blog::find($request->id);
+        
+        if ($request->file('image'))
+        {
+            self::$imageUrl = self::getImageUrl($request);
+        }
+        else
+        {
+            self::$imageUrl = self::$blog->image;
+        }
+        
+        self::$blog->title       = $request->title;
+        self::$blog->author_name = $request->author_name;
+        self::$blog->description = $request->description;
+        self::$blog->image       = self::$imageUrl;
         self::$blog->save();
     }
 }
