@@ -46,6 +46,10 @@ class Blog extends Model
         
         if ($request->file('image'))
         {
+            if (file_exists(self::$blog->image))
+            {
+                unlink(self::$blog->image);
+            }
             self::$imageUrl = self::getImageUrl($request);
         }
         else
