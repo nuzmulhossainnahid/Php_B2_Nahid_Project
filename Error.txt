@@ -1,0 +1,27 @@
+
+Error Solve
+cmd : composer install
+cmd : composer update
+cmd : php artisan cache:clear
+cmd : php artisan config:clear
+cmd : php artisan key:generate
+cmd : php artisan serve
+
+
+create project
+composer create-project laravel/laravel 
+
+php artisan make:controller PhotoController
+
+
+composer install 
+mv .env.example .env 
+php artisan cache:clear 
+composer dump-autoload 
+php artisan key:generate
+
+
+//php artisan migrate     --execute the table
+//php artisan make:migration create_students_table    --add table
+//php artisan migrate:fresh                 -drop all data
+//php artisan make:migration at_password_column --table=student     
