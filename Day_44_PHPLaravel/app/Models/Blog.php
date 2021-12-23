@@ -14,6 +14,9 @@ class Blog extends Model
     private static $directory;
     private static $imageUrl;
     use HasFactory;
+    
+    protected $fillable = [];
+    
     protected static function getImageUrl($request)
     {
         self::$image = $request->file('image');
