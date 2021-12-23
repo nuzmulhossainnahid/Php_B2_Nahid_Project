@@ -10,4 +10,13 @@ class urdanController extends Controller
     {
         return view('font.home.home');
     }
+    
+    public function about()
+    {
+        return view('font.about.about');
+    }
+    public function contactUs()
+    {
+        return view('font.contact.contact');
+    }
 }

@@ -17,3 +17,13 @@ Route::get('/',[
     'uses'=> 'App\Http\Controllers\urdanController@index',
     'as' =>'/'
 ]);
+
+Route::get('/about',[
+    'uses'=> 'App\Http\Controllers\urdanController@about',
+    'as' =>'about'
+]);
+Route::get('/contact-us',[
+    'uses'=> 'App\Http\Controllers\urdanController@contactUs',
+    'as' =>'contact-us'
+]);
+
