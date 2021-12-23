@@ -38,7 +38,7 @@
 
                                         <td>
                                             <a href="{{route('edit-blog', ['id'=>$blog->id])}}" class="btn btn-warning ">Edit</a>
-                                            <a href="" class="btn btn-danger ">Delete</a>
+                                            <a href="{{route('delete-blog', ['id'=>$blog->id])}}" class="btn btn-danger ">Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach

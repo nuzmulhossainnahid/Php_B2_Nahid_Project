@@ -55,7 +55,8 @@ Route::get('/not404',[
 
 Route::get('/add-blog',[
     'uses'=>'App\Http\Controllers\BlogController@index',
-    'as'=>'add-blog'
+    'as'=>'add-blog',
+    'middleware' => ['blog'],
 ]);
 
 
@@ -84,4 +85,9 @@ Route::get('/edit-blog/{id}',[
 Route::post('/update-blog',[
     'uses'=>'App\Http\Controllers\BlogController@update',
     'as'=>'update-blog'
+]);
+
+Route::get('/delete-blog/{id}',[
+    'uses'=>'App\Http\Controllers\BlogController@delete',
+    'as'=>'delete-blog'
 ]);

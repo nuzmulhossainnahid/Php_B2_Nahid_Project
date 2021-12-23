@@ -63,4 +63,14 @@ class Blog extends Model
         self::$blog->image       = self::$imageUrl;
         self::$blog->save();
     }
+
+    public static function deleteBlog($id)
+    {
+        self::$blog = Blog::find($id);
+        if (file_exists(self::$blog->image))
+        {
+            unlink(self::$blog->image);
+        }
+        self::$blog->delete();
+    }
 }

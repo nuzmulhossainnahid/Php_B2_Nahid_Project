@@ -5,6 +5,7 @@
 
 
 @section('body')
+  <h1>{{Session::get('message')}}</h1>
   <section id="slider"><!--slider-->
     <div class="container">
       <div class="row">
