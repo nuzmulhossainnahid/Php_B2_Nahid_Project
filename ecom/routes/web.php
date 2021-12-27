@@ -36,6 +36,8 @@ Route::get('/product-detail', [
     'as'        => 'product-detail'
 ]);
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/dashboard', [
+    'uses'      => 'App\Http\Controllers\DashboardController@index',
+    'as'        => 'dashboard',
+    'middleware' => ['auth:sanctum', 'verified']
+]);
